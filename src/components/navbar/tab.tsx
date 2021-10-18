@@ -5,10 +5,11 @@ import React from 'react'
 interface TabProps {
   text: string
   location: string
+  className?: string
 }
 
 const NavTab = (props: TabProps) => {
-  const {text, location} = props
+  const {text, location, className} = props
   const history = useHistory()
 
   const onClick = () => {
@@ -16,7 +17,7 @@ const NavTab = (props: TabProps) => {
   }
 
   return (
-    <Typography onClick={onClick} variant={'button'} sx={{marginRight: '2rem', cursor: 'pointer'}}>
+    <Typography className={`clickable ${className}`} onClick={onClick} color={'white'} variant={'button'}>
       {text}
     </Typography>
   )

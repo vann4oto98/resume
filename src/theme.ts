@@ -2,11 +2,12 @@ import {createTheme} from '@mui/material/styles'
 import {red} from '@mui/material/colors'
 
 const theme = createTheme({
-  typography: {},
+  typography: {
+    fontFamily: 'Poppins sans-serif'
+  },
   palette: {
     primary: {
-      main: '#EBE5E5',
-      contrastText: '#4B525C'
+      main: '#000000'
     },
     secondary: {
       main: '#19857b'

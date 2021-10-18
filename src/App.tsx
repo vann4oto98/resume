@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {Route, Router, Switch} from 'react-router-dom'
-import AboutPage from './pages/about'
+import HomePage from './pages/home'
 import NavBar from './components/navbar'
 import * as history from 'history'
 
@@ -10,7 +10,7 @@ export default function App() {
       <NavBar />
       <Switch>
         <Route exact path={'/'}>
-          <AboutPage />
+          <HomePage />
         </Route>
       </Switch>
     </Router>

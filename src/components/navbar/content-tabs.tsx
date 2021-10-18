@@ -4,10 +4,11 @@ import NavTab from './tab'
 
 const ContentTabs = () => {
   return (
-    <Box sx={{display: 'flex', flexDirection: 'row', alignItems: 'flex-center'}}>
-      <NavTab text={'About me'} location={'/about'} />
-      <NavTab text={'Experience'} location={'/experience'} />
-      <NavTab text={'Contact'} location={'/contact'} />
+    <Box className={'nav__content'}>
+      <NavTab className={'effect-underline nav__item'} text={'About me'} location={'/about'} />
+      <NavTab className={'effect-underline nav__item'} text={'Experience'} location={'/experience'} />
+      <NavTab className={'effect-underline nav__item'} text={'Technologies'} location={'/technologies'} />
+      <NavTab className={'effect-underline nav__item'} text={'Contact'} location={'/contact'} />
     </Box>
   )
 }

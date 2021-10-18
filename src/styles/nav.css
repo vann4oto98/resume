@@ -1,0 +1,24 @@
+.nav {
+  padding: 0.666rem 2.5vw;
+  background-color: #2d333b;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav__item {
+  margin-left: 1.25vw !important;
+  margin-right: 1.25vw !important;
+}
+
+.nav__content--larger {
+  font-size: larger !important;
+}

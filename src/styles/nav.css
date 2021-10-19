@@ -1,6 +1,6 @@
 .nav {
   padding: 0.666rem 2.5vw;
-  background-color: #2d333b;
+  background-color: #393e46;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -21,4 +21,11 @@
 
 .nav__content--larger {
   font-size: larger !important;
+}
+
+.nav__drawer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
 }

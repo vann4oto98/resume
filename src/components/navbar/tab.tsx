@@ -17,7 +17,7 @@ const NavTab = (props: TabProps) => {
   }
 
   return (
-    <Typography className={`clickable ${className}`} onClick={onClick} color={'white'} variant={'button'}>
+    <Typography className={`clickable ${className}`} onClick={onClick} color={'#EEEEEE'} variant={'button'}>
       {text}
     </Typography>
   )

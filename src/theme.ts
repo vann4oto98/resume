@@ -1,5 +1,10 @@
 import {createTheme} from '@mui/material/styles'
-import {red} from '@mui/material/colors'
+
+// color palette chosen
+//main #222831
+//secondary #393E46
+//highlight #00ADB5
+//text #EEEEEE
 
 //todo set up correct theme and learn how to use efficiently
 const theme = createTheme({
@@ -8,13 +13,16 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#000000'
+      main: '#222831'
     },
     secondary: {
-      main: '#19857b'
+      main: '#393E46'
     },
     error: {
-      main: red.A400
+      main: '#3D0000'
+    },
+    info: {
+      main: '#00ADB5'
     }
   }
 })

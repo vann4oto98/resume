@@ -22,9 +22,8 @@ const theme = createTheme({
       main: '#3D0000'
     },
     info: {
-      main: '#00ADB5'
+      main: '#eeeeee'
     }
   }
 })
-
 export default theme

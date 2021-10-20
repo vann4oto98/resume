@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
-import {Button, Drawer} from '@mui/material'
-import NavTab from './tab'
+import {Button, Drawer, List, ListItem, ListItemButton} from '@mui/material'
 import DehazeIcon from '@mui/icons-material/Dehaze'
+import CloseIcon from '@mui/icons-material/Close'
 import theme from '../../theme'
+import {FooterIconsList} from './footer-icons'
+import {DrawerContentList} from './drawer-content'
 
 export const NavDrawer = () => {
   const [open, setOpen] = useState(false)
@@ -10,7 +12,7 @@ export const NavDrawer = () => {
   return (
     <>
       <Button onClick={() => setOpen(true)}>
-        <DehazeIcon className={'icon'} />
+        <DehazeIcon color={'info'} className={'icon'} />
       </Button>
       <Drawer
         className={'nav__drawer'}
@@ -18,18 +20,24 @@ export const NavDrawer = () => {
           sx: {
             backgroundColor: theme.palette.primary.main,
             width: {
-              xs: 300,
+              xs: 200,
               sm: 500
             }
+            //alignItems: 'center'
           }
         }}
         open={open}
         onClose={() => setOpen(false)}
       >
-        <NavTab className={'effect-underline nav__item'} text={'About me'} location={'/about'} />
-        <NavTab className={'effect-underline nav__item'} text={'Experience'} location={'/experience'} />
-        <NavTab className={'effect-underline nav__item'} text={'Technologies'} location={'/technologies'} />
-        <NavTab className={'effect-underline nav__item'} text={'Contact'} location={'/contact'} />
+        <List>
+          <ListItem>
+            <ListItemButton disableGutters={true} onClick={() => setOpen(false)}>
+              <CloseIcon color={'info'} />
+            </ListItemButton>
+          </ListItem>
+        </List>
+        <DrawerContentList />
+        <FooterIconsList />
       </Drawer>
     </>
   )

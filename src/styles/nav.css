@@ -1,9 +1,8 @@
 .nav {
   padding: 0.666rem 2.5vw;
-  background-color: #393e46;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: center;
 }
@@ -23,9 +22,9 @@
   font-size: larger !important;
 }
 
-.nav__drawer {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-evenly;
-}
+/*.nav__drawer {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  height: 100%;*/
+/*  justify-content: space-evenly !important;*/
+/*}*/

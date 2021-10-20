@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, useMediaQuery, useTheme} from '@mui/material'
+import {AppBar, useMediaQuery, useTheme} from '@mui/material'
 import ContentTabs from './content-tabs'
 import NavTab from './tab'
 import MailButton from './mail'
@@ -10,12 +10,12 @@ const NavBar = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'))
 
   return (
-    <Box className={'nav'}>
+    <AppBar position={'static'} color={'secondary'} className={'nav'}>
       {isMobile && <NavDrawer />}
       <NavTab className={'strike-through nav__content--larger'} text={'VANYO I.'} location={'/'} />
       {!isMobile && <ContentTabs />}
       <MailButton />
-    </Box>
+    </AppBar>
   )
 }
 

@@ -7,7 +7,7 @@ interface MailButtonProps {
 
 const MailButton = (props: MailButtonProps) => {
   const {className} = props
-  return <EmailIcon className={`${className} icon icon--large clickable`} />
+  return <EmailIcon color={'info'} className={`${className} icon--large clickable`} />
 }
 
 export default MailButton

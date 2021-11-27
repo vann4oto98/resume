@@ -8,7 +8,7 @@ interface TextItemProps {
 
 export const TextItem = ({variant, children}: TextItemProps) => {
   return (
-    <Box sx={{p: 0.5, m: 0.5}}>
+    <Box sx={{p: 0.6, m: 0.6, display: 'flex'}}>
       <Typography variant={variant} color={'#EEEEEE'}>
         {children}
       </Typography>

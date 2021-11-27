@@ -6,6 +6,8 @@ import {createTheme} from '@mui/material/styles'
 //highlight #00ADB5
 //text #EEEEEE
 
+//#03D1F7 react color
+//Helvetica Neue & Garamond ?
 //todo set up correct theme and learn how to use efficiently
 const theme = createTheme({
   typography: {

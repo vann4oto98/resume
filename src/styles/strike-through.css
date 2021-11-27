@@ -10,7 +10,7 @@
   height: 1px;
   top: 50%;
   margin-top: -0.5px;
-  background: #fff;
+  background: #00adb5;
 }
 
 .strike-through:before {
@@ -18,12 +18,12 @@
 }
 .strike-through:after {
   right: 2.5px;
-  background: #eeeeee;
+  background: #00adb5;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .strike-through:hover:before {
-  background: #eeeeee;
+  background: #00adb5;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }

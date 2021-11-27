@@ -10,7 +10,7 @@ const NavBar = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
-    <AppBar position={'static'} color={'secondary'} className={'nav'}>
+    <AppBar position={'sticky'} color={'secondary'} className={'nav'}>
       {isMobile && <NavDrawer />}
       <NavTab className={'strike-through nav__content--larger'} text={'VANYO I.'} location={'/'} />
       {!isMobile && <ContentTabs />}

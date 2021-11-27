@@ -23,7 +23,6 @@ export const NavDrawer = () => {
               xs: 200,
               sm: 500
             }
-            //alignItems: 'center'
           }
         }}
         open={open}

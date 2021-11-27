@@ -7,7 +7,7 @@ import {NavDrawer} from './drawer'
 
 const NavBar = () => {
   const theme = useTheme()
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'))
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
     <AppBar position={'static'} color={'secondary'} className={'nav'}>

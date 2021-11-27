@@ -7,6 +7,7 @@ const ContentTabs = () => {
     <Box className={'nav__content'}>
       <NavTab className={'effect-underline nav__item'} text={'Experience'} location={'/experience'} />
       <NavTab className={'effect-underline nav__item'} text={'Open source'} location={'/open-source'} />
+      <NavTab className={'effect-underline nav__item'} text={'Contact'} location={'/contact'} />
     </Box>
   )
 }

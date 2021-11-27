@@ -11,6 +11,7 @@ import {GridIcon} from '../../components/items/grid-icon'
 import {TextItem} from '../../components/items/text-item'
 import {Spacer} from '../../components/layouts/spacer'
 import {HZLine} from '../../components/layouts/horizontal-line'
+import {ItemLink} from '../../components/items/item-link'
 
 const HomePage = () => {
   const theme = useTheme()
@@ -55,6 +56,22 @@ const HomePage = () => {
       <Grid item xs={12} md={6}>
         <Avatar sx={{width: '125px', height: '125px', margin: 'auto'}} src={godot_png} />
         <Avatar sx={{width: '125px', height: '125px', margin: 'auto'}} src={rocket_png} />
+      </Grid>
+      <Spacer top={'2rem'} />
+      <Grid item xs={6} md={4}>
+        <ItemLink variant={'h5'} href={'https://softuni.bg/Certificates/Details/77577/d6ecaeea'}>
+          Java advanced
+        </ItemLink>
+      </Grid>
+      <Grid item xs={6} md={4}>
+        <ItemLink variant={'h5'} href={'https://softuni.bg/Certificates/Details/80557/0916cc8b'}>
+          Java OOP
+        </ItemLink>
+      </Grid>
+      <Grid item xs={6} md={4}>
+        <ItemLink variant={'h5'} href={'https://softuni.bg/Certificates/Details/83884/610ce49a'}>
+          Javascript advanced
+        </ItemLink>
       </Grid>
     </Grid>
   )

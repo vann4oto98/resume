@@ -3,6 +3,7 @@ import {Route, Router, Switch} from 'react-router-dom'
 import HomePage from './pages/home'
 import NavBar from './components/navbar'
 import * as history from 'history'
+import Footer from './components/footer'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
           <HomePage />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   )
 }

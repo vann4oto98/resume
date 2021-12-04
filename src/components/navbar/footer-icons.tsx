@@ -8,10 +8,20 @@ export const FooterIconsList = () => {
     <List>
       <ListItem alignItems={'center'}>
         <ListItemIcon>
-          <GitHubIcon fontSize={'large'} color={'info'} />
+          <GitHubIcon
+            className={'clickable'}
+            fontSize={'large'}
+            color={'info'}
+            onClick={() => window.open('https://github.com/vann4oto98')}
+          />
         </ListItemIcon>
         <ListItemIcon>
-          <LinkedInIcon fontSize={'large'} color={'info'} />
+          <LinkedInIcon
+            className={'clickable'}
+            fontSize={'large'}
+            color={'info'}
+            onClick={() => window.open('https://www.linkedin.com/in/vanyo-ivanov-1351ba1aa/')}
+          />
         </ListItemIcon>
       </ListItem>
     </List>

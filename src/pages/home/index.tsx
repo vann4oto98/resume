@@ -44,7 +44,7 @@ const HomePage = () => {
       <GridIcon src={ts_png} />
       <GridIcon src={js_png} />
       <GridIcon src={ui5_png} />
-      <Spacer top={isMobile ? '1rem' : '4rem'} />
+      <Spacer top={isMobile ? '1rem' : '2.5rem'} />
       <HZLine />
       <Grid item xs={12} md={12}>
         <TextItem variant={'h3'}>How I started</TextItem>
